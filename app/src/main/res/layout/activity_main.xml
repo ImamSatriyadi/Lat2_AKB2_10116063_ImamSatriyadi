@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43b3e6"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_welcome_logo"
+        android:layout_above="@id/et_user"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/img_icon"
+        />
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="13dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/et_user"
+        android:layout_above="@id/et_pass"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:backgroundTint="#FFF"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Password"
+        android:textSize="13dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/et_pass"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:backgroundTint="#FFF"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_below="@id/et_pass"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_login"
+        android:background="@drawable/style_button"
+        android:textColor="#FFF"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_below="@+id/btn_login"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_or"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_welcome_fb_login"
+        android:layout_below="@id/txt_or"
+        android:layout_marginTop="15dp"
+       android:layout_marginLeft="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONNECT WITH FACEBOOK"
+        android:layout_below="@+id/txt_or"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_fb"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/style_button"
+        android:textColor="#FFF"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_fb"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/txt_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="doesn't have account ?"
+            android:layout_below="@id/btn_fb"
+            android:textSize="13dp"
+            android:textColor="#FFF"
+
+            />
+        <TextView
+            android:id="@+id/txt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_below="@id/btn_fb"
+            android:textSize="13dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_toRightOf="@id/txt_question"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

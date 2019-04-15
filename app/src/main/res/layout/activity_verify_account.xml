@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43b3e6"
+    android:padding="20dp"
+    tools:context=".VerifyAccount">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txt_notice"
+        android:layout_marginBottom="10dp"
+        android:text="Verify your Account"
+        android:textColor="#FFF"
+        android:fontFamily="@font/roboto_light"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/txt_notice"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/roboto_light"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_ver_code"
+        android:layout_marginBottom="50dp"
+        android:textColor="#FFF"
+        android:textSize="13dp"
+        android:text="We have send verfication code to your email"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/et_ver_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="enter verification code here"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:backgroundTint="#FFF"
+        android:fontFamily="@font/roboto_light"
+        android:textColorHint="#FFF"
+        android:paddingBottom="20dp"
+        android:textSize="15dp"
+        android:layout_above="@+id/btn_send"
+        />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        android:background="@drawable/style_button"
+        android:text="SEND"
+        android:textColor="#FFF"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_send"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/txt_question_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="doesn't get the code?"
+            android:layout_below="@id/btn_fb"
+            android:textSize="13dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#FFF"
+
+            />
+        <TextView
+            android:id="@+id/txt_resend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:layout_below="@id/btn_fb"
+            android:textSize="13dp"
+            android:fontFamily="@font/roboto_light"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_toRightOf="@id/txt_question"
+
+            />
+    </LinearLayout>
+</RelativeLayout>
